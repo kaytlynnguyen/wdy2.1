@@ -1,0 +1,64 @@
+:root {
+  --bg: #5477bc;
+  --card: #233e89;
+  --muted: #a7b0c0;
+  --text: #e8edf5;
+  --accent: #6aa5ff;
+  --accent-2: #8b5cf6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.6 system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ===== Header ===== */
+.site-header {
+  position: sticky;
+  top: 0;
+  background: linear-gradient(90deg, var(--card), #10152180);
+  border-bottom: 1px solid #202636;
+  backdrop-filter: blur(6px);
+  z-index: 10;
+}
+
+.logo a {
+  font-weight: 800;
+  letter-spacing: .5px;
+}
+
+.nav {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  padding: 8px 12px;
+  border-radius: 10px;
+  color: var(--muted);
+}
+
+.nav a:hover {
+  background: #20263a;
+  color: var(--text);
+}
